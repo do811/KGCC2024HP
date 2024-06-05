@@ -1,0 +1,61 @@
+h1 {
+    background-color: rgb(87, 228, 35);
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    padding-left: 10%;
+}
+
+div {
+    /*子要素を横並びにするやつ*/
+    display: flex;
+    /*要素を真ん中に置くやつ*/
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /*-------ここまで------*/
+    background-color: rgb(33, 33, 189);
+    height: 30%;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+#right {
+    position: relative;
+    margin-left: 5%;
+    background-color: aqua;
+    color: var(--color);
+    border-radius: 5%;
+    overflow: hidden;
+    transition: 3s;
+    transition-duration: 0.5s;
+}
+
+iframe {
+    border-radius: 4%;
+    border: 60px solid #1e3ce3;
+    width: 40%;
+    height: 50%;
+    transition-duration: 0.4s;
+}
+
+iframe:hover {
+    border: 66px solid #0a72f9;
+    transition-duration: 0.4s;
+}
+
+#left {
+    transition-duration: 0.5s;
+    background-color: rgb(255, 216, 40);
+    border-radius: 5%;
+
+}
+
+#right:hover {
+    transition-duration: 1s;
+    transform: scale(90%);
+}
+
+#left:hover {
+    transition-duration: 1s;
+    transform: scale(110%);
+}
