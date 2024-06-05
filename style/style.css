@@ -5,6 +5,50 @@ h1 {
     padding-left: 10%;
 }
 
+/*このやり方で斜線作るのは強引すぎるので他のやり方で*/
+#naname {
+    position: absolute;
+    transform: rotate(-45deg) translateX(-70%) translateY(-250%);
+    width: 450vw;
+    height: 30vh;
+    background-color: #ff16c9;
+}
+
+#nanameshita {
+    transform: rotate(-45deg) translateY(-30%);
+    width: 200vw;
+    height: 9vw;
+    background-color: #ff16c9;
+}
+
+/*----------------------------------*/
+table {
+    background-color: #255af8;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+    width: 1%;
+    height: 1vw;
+    background-color: #1c9e66;
+}
+
+.odd>td {
+    background-color: #2bff05;
+    width: 1%;
+    height: 1vw;
+    border-bottom-left-radius: 100%;
+}
+
+.even>td {
+    background-color: #2bff05;
+    width: 1%;
+    height: 1vw;
+    border-top-left-radius: 100%;
+}
+
 div {
     /*子要素を横並びにするやつ*/
     display: flex;
@@ -40,7 +84,8 @@ iframe {
 
 iframe:hover {
     border: 66px solid #0a72f9;
-    transition-duration: 0.4s;
+    transition-duration: 90s;
+    /*transform: rotate(1145141919810deg);*/
 }
 
 #left {
